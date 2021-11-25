@@ -45,7 +45,7 @@ class Student(models.Model):
         super().save()
 
     def __str__(self):
-        return  str(self.id)
+        return  str(self.system_id)
 
 
 # Users -.primary key(id), name, age, dob, gender,  role
