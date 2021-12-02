@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import System_user , Teacher, Student
 
-class SystemUserSerializer(serializers.ModelSerializer):
+class SystemUserSerializer(serializers.Serializer):
     id =serializers.IntegerField(read_only=True),
     users_name =serializers.CharField(),
     users_age =serializers.IntegerField(),
